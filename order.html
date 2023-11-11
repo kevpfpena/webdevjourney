@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kevin Pena">
+    <meta name="description" content="This page contains a form on how to place an order from WaiCrochets">
+    <title>WaiCrochets: Order Form</title>
+    <link rel="icon" href="img/waicrochetslogo.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Wai Crochets</h1>
+        <nav aria-label="primary-navigation">
+            <p>
+                <a href="index.html">Return to Home</a>
+            </p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article id="termsandconditions">
+            <h2>Terms and conditions</h2>
+            <p><strong>Please ensure that you read the following terms and conditions before filling out the order
+                    form.</strong></p>
+            <ol>
+                <li>Filling out the order form does not guarantee a commission slot. Please wait for me to contact you
+                    on instagram or email.</li>
+                <li>You must be living in either Brunei or one of the following countries outside of Brunei:
+                    Singapore,
+                    Malaysia,
+                    Indonesia,
+                    Philippines,
+                    Thailand,
+                    Vietnam,
+                    Australia,
+                    New Zealand,
+                    China,
+                    Hong Kong,
+                    Taiwan,
+                    Japan,
+                    South Korea,
+                    United States,
+                    Canada,
+                    Denmark,
+                    France,
+                    Germany,
+                    Italy,
+                    Netherlands,
+                    Switzerland,
+                    South Africa,
+                    Turkey,
+                    United Arab Emirates,
+                    United Kingdom.
+                </li>
+                <li>
+                    If you are ordering from Brunei, you must have a BIBD or Baiduri account.
+                </li>
+                <li>
+                    If you are ordering internationally, you must have a PayPal.
+                </li>
+                <li>
+                    A <strong>non-refundable deposit</strong> of 50% of the estimated cost of the plush must be made I
+                    start working on your request.
+                </li>
+                <li>
+                    Full payment must be made before shipping or collection of the plush. Please note that shipping fees
+                    apply to international customers.
+                </li>
+            </ol>
+            <br>
+            <form>
+                <fieldset>
+                    <legend>Have you read, understood and agreed to the terms and conditions above?</legend>
+                    <input type="radio" name="agreement" id="yes" value="yes" required>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" name="agreement" id="no" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+            </form>
+        </article>
+
+        <hr>
+
+        <article id="orderform">
+            <h2>Order from me</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" name="fullName" id="fullName" required autofocus>
+                    </p>
+                    <p>
+                        <label for="instagram">Instagram Username:</label>
+                        <input type="text" name="instagram" id="instagram" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="location">Where are you located?</label>
+                        <select name="location" id="location" required>
+                            <option value="Brunei">Brunei</option>
+                            <option value="International">International</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Order details</legend>
+                    <label for="description">Please describe your order here:</label><br>
+                    <textarea name="description" id="description" cols="100" rows="5" required></textarea>
+
+                    <label for="size">Please indicate the approximate size of the plush in inches:</label>
+                    <input type="number" name="size" id="size" required>
+
+                    <br><br>
+
+                    <label for="reference">Please upload a file showing an example of what you would like me to
+                        make:</label>
+                    <input type="file" name="reference" id="reference" required>
+
+                    <p><strong>Please check all your details before submitting this form.</strong></p>
+
+                    <button type="submit">Submit form</button>
+
+
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+
+    <footer>
+        <hr>
+        <p>
+            <small>
+                &lt;&copy;Waicrochets&gt;
+            </small>
+        </p>
+    </footer>
+</body>
+
+</html>
